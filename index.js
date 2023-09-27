@@ -1,0 +1,5 @@
+"ALX-Africa 2022-2023"
+"Nairobi Aviation College 2014-2015"
+"Lux-Tech Academy feb-march 2022"
+"Google Africa Scholarship Oct 2020 - Feb 2021"
+"Sama School Oct 2017 - Nov 2017"
