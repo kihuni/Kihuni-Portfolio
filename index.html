@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img class="logo" src="images/newlogo.png" alt="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Developer</p>
@@ -124,14 +126,46 @@
                     <img src="images/work-3.png" alt="">
                      
                     <div class="layer">
-                        <h3>Amazon Clone</h3>
-                        <p>Built with Css and Html</p>
-                            <a href="https://amazon-clone254.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Book Review Platform</h3>
+                        <p>In Progress</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a class="btn"  href="#">See more</a>
         </div>
     </div>
+<!-----------Contact----------->
+<div id="contact">
+    <div class="container">
+       <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> stephenkihuni55@gmail.com</p>
+            <p><i class="fa-solid fa-phone-flip"></i> 0717788354</p>
+            <div class="social-icons">
+                <a href="https://github.com/kihuni"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/SKihuni"><i class="fa-solid fa-x"></i></i></a>
+                <a href=https://www.linkedin.com/in/stephen-kihuni-8b14a3250/><i class="fa-brands fa-linkedin"></i></a>
+                <a href=https://podcasters.spotify.com/pod/show/stephen-kihuni><i class="fa-brands fa-spotify"></i></a>
+            </div>
+            <a class="btn btn2" href="images/updated cv.docx" download="">Download My Resume Here</a>
+        </div>
+        <div class="contact-right">
+            <form action="">
+                <input type="text" name="Name" placeholder="Your Name" required id="">
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+                <button class="btn btn2" type="submit">Submit</button>
+            </form>
+
+        </div>
+       </div> 
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Kihuni. Made with <i class="fa-solid fa-heart"></i> by Kihuni </p>
+    </div>
+</div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontents = document.getElementsByClassName("tab-contents")
@@ -146,7 +180,17 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab")
         }
+    </script>
 
+    <script>
+        var SideMenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            SideMenu.style.right = "0";
+        }
+        function closemenu(){
+            SideMenu.style.right = "-200px";
+        }
     </script>
 </body>
 </html>
