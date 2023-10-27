@@ -58,6 +58,38 @@ nav ul li a:hover::after{
     margin-top:20%;
     font-size: 30px;
 }
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animated-text {
+    opacity: 0;  
+    animation: fadeIn 6s infinite; 
+}
+
+.header-text .animated-text:nth-child(1) {
+    animation-delay: 0s;  
+}
+
+.header-text .animated-text:nth-child(2) {
+    animation-delay: 2s;  
+}
+
+.header-text .animated-text:nth-child(3) {
+    animation-delay: 4s;  
+}
+
+
+
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
@@ -319,6 +351,7 @@ form .btn2{
 nav .fa-circle-xmark, nav .fa-bars{
 display: none;
 }
+
 
 @media only screen and (max-width: 600px){
    .header-text{
