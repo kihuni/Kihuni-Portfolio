@@ -402,9 +402,11 @@ display: none;
 @media only screen and (max-width: 600px){
 
     #header {
-        width: 100%;
-        height: 60vh;
         background: #262626;
+        height: auto;
+    }
+    .star{
+        display: none;
     }
     .header-text {
         margin-top: 40%;  
@@ -415,21 +417,28 @@ display: none;
         font-size: 28px;  
         margin-top: 10px;  
     }
+    nav {
+        margin-top: 0; 
+        background: rgba(38, 38, 38, 0.7); 
+    }
+
    nav .fa-circle-xmark, nav .fa-bars{
     display: block;
     font-size: 25px;
    }
+
    nav ul{
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    right:-200px;
-    width: 200px;
-    height:100vh ;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
+    background: transparent; 
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
    }
+
    nav ul li{
     display: block;
     margin: 25px;
@@ -441,9 +450,9 @@ display: none;
     cursor: pointer;
    }
    .hamburger-icon:hover {
-    transform: scale(1.1); 
-    cursor: pointer;
-    color: #ff004f;
+        transform: scale(1.1);
+        cursor: pointer;
+        color: #ff004f;
 }
    .logo{
     display: none;
