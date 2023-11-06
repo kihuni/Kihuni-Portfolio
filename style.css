@@ -392,33 +392,9 @@ display: none;
         height: auto;
     }
     
-    .star {
-        position: absolute;
-        background: #ffffff;
-        width: 3px;
-        height: 3px;
-        animation: twinkle 1s infinite, drift 5s linear infinite; /* Added a drift animation for continuous movement */
-    }
-
-    @keyframes twinkle {
-        0%, 100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        50% {
-            transform: translateY(200px);
-            opacity: 0;
-        }
-    }
-
-    @keyframes drift {
-        0% {
-            transform: translate(0, 0);
-        }
-        100% {
-            transform: translate(100%, 0); /* Adjust the values as needed for the desired drift effect */
-        }
-    }
+ .star{
+    display: none;
+ }
 
     .header-text {
         margin-top: 40%;  
