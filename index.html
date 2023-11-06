@@ -8,28 +8,33 @@
     <script src="https://kit.fontawesome.com/d25f1a26ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h2 class="logo"><span>Stephen</span> kihuni</h2>
-                <h2 class="mobile-logo"><span>S</span>K</h2>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p class="animated-text">Hi, I am Stephen Kihuni</p>
-                <p class="animated-text">a software developer<span>,</span></p>
-                <p class="animated-text">and technical writer<span>.</span></p>
+   <!-- Header -->
+   <header id="header" class="stars">
+    <div class="stars"></div>
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span>Stephen</span> Kihuni</h1>
+            <h1 class="mobile-logo"><span>S</span>K</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <div class="logo-container">
+                <img src="images/logi2.png" alt="Logo" style="width: 80px;">
             </div>
+            <p class="animated-text" style="text-align: center;">Hi, I am Stephen Kihuni</p>
+            <p class="animated-text" style="text-align: center;">a software developer<span>,</span></p>
+            <p class="animated-text" style="text-align: center;">and technical writer<span>.</span></p>
         </div>
     </div>
+</header>
     <!-------about----------->
     <div id="about">
         <div class="container">
@@ -223,6 +228,24 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+      </script>
+      <script>
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = mouseX + 'px';
+            star.style.top = mouseY + 'px';
+
+            document.body.appendChild(star);
+
+            // Remove stars after a certain time to avoid clutter
+            setTimeout(() => {
+                star.remove();
+            }, 2000);
+        });
       </script>
 </body>
 </html>
