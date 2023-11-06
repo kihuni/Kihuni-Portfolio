@@ -58,6 +58,7 @@ nav {
 .logo span, .mobile-logo span{
     color: #ff004f;
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -439,6 +440,11 @@ display: none;
     left: 25px;
     cursor: pointer;
    }
+   .hamburger-icon:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+    color: #ff004f;
+}
    .logo{
     display: none;
    }
