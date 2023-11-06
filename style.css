@@ -25,7 +25,13 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    width: 300px;
+}
+.logo span, .mobile-logo span{
+    color: #ff004f; 
+}
+.mobile-logo{
+    display: none;
 }
 
 nav ul li{
@@ -90,13 +96,15 @@ nav ul li a:hover::after{
 
 
 
-.header-text h1{
+.header-text p{
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
+.header-text p span{
     color: #ff004f;
 }
+
+
 
 /*--------About-----------*/
 
@@ -354,13 +362,15 @@ display: none;
 
 
 @media only screen and (max-width: 600px){
-   .header-text{
-    margin-top: 100%;
-    font-size: 16px;
-   }
-   .header-text h1{
-    font-size: 30px;
-   }
+    .header-text {
+        margin-top: 40%;  
+        font-size: 18px; 
+    }
+    
+    .header-text p {
+        font-size: 28px;  
+        margin-top: 10px;  
+    }
    nav .fa-circle-xmark, nav .fa-bars{
     display: block;
     font-size: 25px;
@@ -385,6 +395,12 @@ display: none;
     top: 25px;
     left: 25px;
     cursor: pointer;
+   }
+   .logo{
+    display: none;
+   }
+   .mobile-logo{
+    display: flex;
    }
    .sub-title{
     font-size: 40px;
